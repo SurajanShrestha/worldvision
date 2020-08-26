@@ -1,0 +1,118 @@
+
+.flat-information li a{
+    font-size:14px;
+}
+.slothholder img{
+    display: none;
+}
+.header.fixed-header #mainnav .menu > li > a {
+    color: #291d0d;
+}
+.image-box-law .content-law .name a{
+    font-weight: 600;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.bottom .bottom-wrap {
+    padding: 16px 0 15px 0;
+}
+.facts{
+    background-image: url('../images/files/bookcase-335849_1920.jpg');
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.facts:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+    background: #141414;
+    opacity: 0.5;
+}
+.icon img{
+    margin-top:-15px;
+    -webkit-filter:brightness(100) grayscale(100);
+            filter:brightness(100) grayscale(100)
+}
+.top-search {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 120px;
+    border-radius: 4px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.top-search.show {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    top: 50px;
+}
+.top-search ul{
+    text-align:center ;
+}
+.top-search ul li a{
+    padding:4px 16px;
+    display: block;
+    color:#141414;
+    border-bottom:1px solid rgba(0, 0, 0, 0.3);
+}
+@media only screen and (min-width:768px){
+    /* .rev_slider_wrapper.fullwidthbanner-container, .rev_slider.fullwidthabanner{
+        height:100vh !important;
+    } */
+    .top-bar{
+        padding:10px 0;
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:99;
+        background-color:transparent;
+        border:none
+    }
+    .header{
+        position: absolute;
+        top:49px;
+        left:0;
+        width:100%;
+        z-index:9;
+        background-color:transparent;
+        box-shadow: none;
+    }
+    .header:before{
+        content:'';
+        position: absolute;
+        top:-50px;
+        left:0;
+        width:100%;
+        height:400%;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,0) 48%, rgba(40,40,40,1) 100%);
+        z-index:0;
+    }
+    .header.fixed-header:before{
+        content:'';
+        display: none;
+    }
+    .flat-information li a{
+        color:#fefefe;
+    }
+    .flat-contact-us a.phone {
+        color: #fefefe;
+    }
+    #mainnav .menu > li > a {
+        color: #fefefe;
+    }
+}
