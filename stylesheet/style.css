@@ -2633,7 +2633,9 @@ input::-webkit-input-placeholder {
 -------------------------------------------------------------- */
 .testimonial {
     padding: 107px 0 28px 0;
-    background-image: url('../images/home1/16.png');
+    /*background-image: url('../images/home1/16.png');*/
+    /*Changes*/
+    background-image: url('../images/home1/25.png');
     background-size: cover;
 }
 .testimonial .col-left {

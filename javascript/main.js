@@ -492,7 +492,7 @@
 
     var testimonialSlider = function() {
         $(window).on('load resize',function(){
-            $('#carousel-testimonial').each(function(){
+            /*$('#carousel-testimonial').each(function(){
                 $('#carousel-testimonial').flexslider({
                     animation: "slide",
                     controlNav: false,
@@ -511,11 +511,24 @@
                     slideshow: false,
                     directionNav: true,
                     slideshow :true,
-                    sync: "#carousel-testimonial",
+                    //Changes
+                    //sync: "#carousel-testimonial",
                     prevText : "",
                     nextText : ""
                 });
-            });  
+            });*/ 
+            $('#slider-testimonial').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                directionNav: true,
+                slideshow :true,
+                //Changes
+                //sync: "#carousel-testimonial",
+                prevText : "",
+                nextText : ""
+            }); 
         });
     }; 
 
