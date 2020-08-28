@@ -398,9 +398,10 @@
             var a = 0;
             $(window).scroll(function() {
                 /*Changes:
-                Added if($(document.body).hasClass('counter')) i.e. the following code will
-                only run if the document body has counter class.*/
-                if($(document.body).hasClass('counter')){
+                Added if(document.getElementsByTagName('title')[0].innerText==='World Vision Legal Service') OR 
+                (document.getElementsByTagName('title')[0].innerText==='Our Team') i.e.
+                the following code will only run if the document body is the Homepage or Our Team Page*/
+                if(document.getElementsByTagName('title')[0].innerText==='World Vision Legal Service'||document.getElementsByTagName('title')[0].innerText==='Our Team'){
                     var oTop = $('.counter').offset().top - window.innerHeight;
                     if (a == 0 && $(window).scrollTop() > oTop) {
                         if ( $().countTo ) {
@@ -414,9 +415,9 @@
                                 });
                             });
                         }
-                    a = 1;
+                        a = 1;
                     }
-                }    
+                }
             });
         }
     };
